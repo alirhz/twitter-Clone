@@ -31,38 +31,9 @@ mat-icon {
   font-size: 30px; 
   height: 50px ;
   width: 50px;
+  color: #0000ffc4;
 }
 
 .container {
   margin-top: 15%;
-}
-
-.card-width {
-  width: 55%;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.new-tweet {
-  width: 80%;
-  margin: 10px;
-  margin-top: 6px;
-}
-
-.tweetButton {
-  border-radius: 20px;
-  right: 5%;
-  bottom: 10px;
-  position: relative;
-}
-
-.example-card {
-  max-width: 400px;
-  margin-left: 2%;
-  border-radius: 20px;
-}
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
 }

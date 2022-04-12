@@ -1,0 +1,94 @@
+.example-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    width: 25%;
+  }
+  
+  .Buttons {
+    display: block;
+    margin: 5%;
+    padding-left: 39%;
+}
+
+p {
+  padding-top: 2%;
+  margin-right: 10%;
+  padding-left: 8%;
+  float: right;
+}
+
+mat-icon {
+  font-size: 20px; 
+  height: 35px ;
+}
+
+.container {
+  margin-top: 15%;
+}
+
+.box-width {
+  width: 100%;
+}
+
+.card-width {
+  display: grid;
+  width: 50%;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.new-tweet {
+  width: 80%;
+  margin: 10px;
+  margin-top: 6px;
+}
+
+.tweetButton {
+  border-radius: 20px;
+  right: 5%;
+  bottom: 10px;
+  position: relative;
+}
+
+.example-card {
+  display: grid;
+  width: auto;
+  margin-left: 2%;
+  margin-right: 47%;
+  margin-top: 10px;
+  border-radius: 20px;
+  min-width: 265px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.trends {
+  margin: 10px;
+  width: 39%;
+  float: right;
+}
+
+.trend-cards {
+  border-radius: 22px;
+  background-color: rgb(0 0 0 / 5%);
+}
+
+
+@media only screen and (min-width: 400px) {
+  .md {
+      display: block;
+  }
+}

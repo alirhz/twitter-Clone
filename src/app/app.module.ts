@@ -9,6 +9,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 import { MaterialModule } from './material.module';
+import { HomeModule } from './home/home.module';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,12 @@ import { MaterialModule } from './material.module';
     AppRoutingModule,
     MatDatepickerModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule,
+    CommonModule,
+    HomeModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(), 
   ],
   providers: [],
   bootstrap: [AppComponent]

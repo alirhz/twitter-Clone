@@ -1,0 +1,15 @@
+
+<div class="trends md">
+    <mat-form-field class="search-field " appearance="outline">
+        <mat-label>search twitt</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+    <mat-card class="trend-cards">
+      <h1>Trends</h1>
+      <div *ngFor="let trend of trends" >
+        <mat-card-title>{{trend.title}}</mat-card-title>
+        <mat-card-subtitle>{{trend.name}}</mat-card-subtitle>
+        <mat-card-content>{{trend.tweets}}:  tweets</mat-card-content>
+      </div>
+      </mat-card>
+  </div>

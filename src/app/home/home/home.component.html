@@ -1,0 +1,42 @@
+<div class="box-width">
+  <app-trends></app-trends>
+  <div class="card-width">
+    <mat-card>
+      <mat-card-title>Home</mat-card-title>
+      <br>
+      <mat-card-subtitle>
+        <button mat-icon-button>
+          <div mat-card-avatar class="example-header-image"></div>
+        </button>
+        <mat-form-field class="new-tweet" appearance="outline">
+          <mat-label>what do you think?</mat-label>
+          <textarea [formControl]="tweet" matInput></textarea>
+        </mat-form-field>
+      </mat-card-subtitle>
+      <mat-card-actions align="end">
+        <button class="tweetButton" (click)="createData()" mat-raised-button color="primary">Tweet</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div *ngFor="let tweet of tweets" class="example-card">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+      </mat-card-header>
+      <br>
+      <mat-card-content>
+        {{tweet.text}}
+      </mat-card-content>
+      <img mat-card-image src={{tweet.image}}>
+      <mat-card-actions>
+        <button (click)="likePost()" mat-button>
+          <mat-icon>{{ liked ? "favorite" : "favorite_border" }}</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

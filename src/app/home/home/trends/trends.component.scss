@@ -1,0 +1,22 @@
+.trends {
+    margin: 10px;
+    width: 39%;
+    // margin-bottom: 100%;
+    float: right;
+  }
+  
+  .trend-cards {
+    border-radius: 22px;
+    background-color: rgb(0 0 0 / 5%);
+  }
+
+  .search-field {
+    display: contents;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .md {
+        display: none;
+    }
+  }
+  
