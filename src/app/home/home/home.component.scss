@@ -42,7 +42,6 @@ mat-icon {
 
 .card-width {
   display: grid;
-  width: 50%;
   margin: 20px;
   border-radius: 20px;
 }
@@ -60,14 +59,26 @@ mat-icon {
   position: relative;
 }
 
+.options {
+  position: absolute;
+  bottom: 10px;
+  margin: 10px;
+}
+
 .example-card {
   display: grid;
-  width: auto;
-  margin-left: 2%;
-  margin-right: 47%;
-  margin-top: 10px;
+  width: 54%;
+  margin: 20px;
   border-radius: 20px;
-  min-width: 265px;
+  min-width: 260px;
+  align-content: space-evenly;
+}
+
+@media only screen and (max-width: 588px) {
+  .cards {
+    // min-width: 404px;
+    width: 90%;
+  }
 }
 
 .example-header-image {

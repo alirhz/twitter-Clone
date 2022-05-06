@@ -13,6 +13,39 @@
   .example-sidenav {
     width: 25%;
   }
+
+  @media only screen and (max-width: 400px) {
+    .ms {
+      width: 25%;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    .hideSideNav {
+      display: none;
+    }
+  }
+
+  .toolbarIcon {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+  }
+
+  .toolBar {
+    position: fixed;
+    display: none ;
+    bottom: 0px;
+    height: 3.5rem;
+    max-height: 8vh;
+  }
+
+  .tweetButton {
+    left: 45%;
+    width: 50%;
+    height: 7%;
+    border-radius: 23px;
+  }
   
   .Buttons {
     display: block;
@@ -32,6 +65,19 @@ mat-icon {
   height: 50px ;
   width: 50px;
   color: #0000ffc4;
+}
+
+@media only screen and (max-width: 600px) {
+  .md {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .showToolBar {
+    display: block;
+    width: 100%;
+  }
 }
 
 .container {

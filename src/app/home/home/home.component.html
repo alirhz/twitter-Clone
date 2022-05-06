@@ -16,9 +16,14 @@
       <mat-card-actions align="end">
         <button class="tweetButton" (click)="createData()" mat-raised-button color="primary">Tweet</button>
       </mat-card-actions>
+      <div class="options">
+        <mat-card-actions align="start">
+          <mat-icon>image</mat-icon>
+        </mat-card-actions>
+      </div>
     </mat-card>
   </div>
-  <div *ngFor="let tweet of tweets" class="example-card">
+  <div *ngFor="let tweet of tweets" class="example-card cards">
     <mat-card>
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
