@@ -1,71 +1,58 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
-    <div class="container">
+  <mat-drawer #drawer class="example-sidenav hideSideNav" mode="side" opened>
+    <div class="container ms">
       <div class="Buttons">
         <button mat-icon-button>
           <mat-icon>home</mat-icon>
         </button>
-        <p>
-          Home
-        </p>
       </div>
       <div class="Buttons">
         <button mat-icon-button>
           <mat-icon>explore</mat-icon>
         </button>
-        <p>
-          Explore
-        </p>
       </div>
       <div class="Buttons">
         <button mat-icon-button>
           <mat-icon>notifications_none</mat-icon>
         </button>
-        <p>
-          Notification
-        </p>
       </div>
       <div class="Buttons">
         <button mat-icon-button>
           <mat-icon> mail_outline</mat-icon>
         </button>
-        <p>
-          Messages
-        </p>
       </div>
       <div class="Buttons">
         <button mat-icon-button>
           <mat-icon>bookmark_border</mat-icon>
         </button>
-        <p>
-          BookMark
-        </p>
       </div>
       <div class="Buttons">
         <button mat-icon-button>
           <mat-icon>description</mat-icon>
         </button>
-        <p>
-          List
-        </p>
       </div>
       <div class="Buttons">
         <button mat-icon-button>
           <mat-icon> person_pin</mat-icon>
         </button>
-        <p>
-          Profile
-        </p>
       </div>
       <div class="Buttons">
         <button mat-icon-button>
           <mat-icon>more</mat-icon>
         </button>
-        <p>
-          more
-        </p>
       </div>
+      <button class="tweetButton" mat-raised-button color="primary">Tweet</button>
     </div>
   </mat-drawer>
   <router-outlet></router-outlet>
+  <div class="toolBar showToolBar">
+    <mat-toolbar>
+      <div class="toolbarIcon">
+        <mat-icon style="color: black;">home</mat-icon>
+        <mat-icon style="color: black;">search</mat-icon>
+        <mat-icon style="color: black;">notifications</mat-icon>
+        <mat-icon style="color: black;"> mail_outline</mat-icon>
+      </div>
+    </mat-toolbar>
+  </div>
 </mat-drawer-container>
